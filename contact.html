@@ -7,6 +7,57 @@
     <title>Resume.Contact.form</title>
 </head>
 <body>
-    
+    <h1 align="center" ><ins>Contact Form</ins></h1>
+    <hr/>
+
+    <form action="https://www.google.com/search" method="get" target="_blank" align="right" >
+        <label>Google Search bar</label><br/>
+        <input type="text" name="q" placeholder="Enter anything to search" />
+        <input type="submit" value="Search"/>
+        </form>
+    <form action="">
+        <fieldset>
+            <legend>Personal information:</legend>
+            First name*:<br>
+            <input type="text" name="firstname" placeholder="Enter your first name" size="20" ><br>
+            Last name*:<br>
+            <input type="text" name="lastname" placeholder="Enter your last name"  size="20"><br>
+            <label>Email Address*:</label> <br>
+            <input type="email" name="email" placeholder="example@abc.com" size="20" ><br>
+            Gender: <br>
+            <input type="radio" name="gender" value="male" />
+            male
+            <input type="radio" name="gender" value="female" />
+            female<br/>
+            <br/>
+            <label>Security check*:</label> <br><br>
+
+            What is your's favorite food? <br/>
+            <select name="Security_ques">
+                <option value="meat">Please-Select</option>
+                <option value="meat">Steak</option>
+                <option value="ABC">Fish </option>
+            </select><br/><br/>
+            <label>To receives updates from us please check the box</label><br/>
+            <input type="checkbox" name="updates" value="Yes" > Yes
+
+            
+        </fieldset>
+        <fieldset>
+            <legend>Message Box:</legend>
+            <textarea placeholder="Enter your message here...." name="comments" cols="100" rows="20" maxlength="500" ></textarea>
+            <br/>
+            <input type="submit" name="subform" value="SUBMIT" onclick="alert('Form is sucessfully submited, Thanks!')"  >
+           
+            <p align="right">Subscribe to our email list:
+            <input type="email" name="email" />
+            <input type="submit" name="subscribe"  value="Subscribe" />
+            </p>
+            <a  href="./Resume.html"><button>GoBack</button> </a>
+        </fieldset>
+    </form>
+
+
+
 </body>
 </html>
